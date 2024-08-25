@@ -2,7 +2,7 @@ function criptografar(){
     let texto = document.getElementById('texto_normal').value;
     let enviar = document.getElementById('texto_encriptado'); 
     console.log(texto)
-    enviar.value = executar_criptografia(texto)
+    enviar.value = executar_criptografia(texto);
 
 
 
@@ -22,7 +22,8 @@ function descriptografar(){
     let texto = document.getElementById('texto_encriptado').value;
     let enviar = document.getElementById('texto_normal');
 
-    enviar.value = texto
+    console.log(texto)
+    enviar.value = executar_descriptografia(texto);
 
 
 }
@@ -46,9 +47,22 @@ function executar_criptografia(txt){
 
 }
 
-function executar_descriptografia(){
-    
+function executar_descriptografia(txt) {
+    let texto = '';
+    let i = 0;
+
+    while (i < txt.length) {
+        texto += (txt.substring(i, i + 2) === "ai") ? (i += 2, 'a') :
+                 (txt.substring(i, i + 5) === "enter") ? (i += 5, 'e') :
+                 (txt.substring(i, i + 4) === "imes") ? (i += 4, 'i') :
+                 (txt.substring(i, i + 4) === "ober") ? (i += 4, 'o') :
+                 (txt.substring(i, i + 4) === "ufat") ? (i += 4, 'u') :
+                 txt.charAt(i++);
+    }
+
+    return texto;
 }
+
 
 /*
 As "chaves" de criptografia que utilizaremos são:
