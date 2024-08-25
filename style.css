@@ -1,3 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --cor-primaria:
+  --cor-secundaria: 
+  --cor-terciaria: 
+  --cor-hover: 
+
+  --fonte-primaria: "Inter", sans-serif
+  --fonte-weight: 400;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  display: flex;
+  box-sizing: border-box;
+  color: #0A3871;
+  background-color: #F3F5FC;
+  
+  flex-direction: row;
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-weight);
+  align-items: flex-start;
+
+} 
+
+.blocoEsquerdo__texto{
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-weight);
+  font-size: 32px;
+  line-height: 48px;
+  text-align: left;
+
+}
+
+.blocoEsquerdo__paragrafo{
+  display: flex;
+  
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-weight);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+
+}
+
+.blocoEsquerdo__button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-weight);
+  font-size: 16px;
+  line-height: 19.36px;
+  text-align: center;
+  
+}
+
+.blocoEsquerdo__button__criptografar{
+  background-color: #0A3871;
+  color: White;
+  
+  width: 300px;
+  height: 67px;
+}
+
+.blocoEsquerdo__button__descriptografar{
+  color: #0A3871;  
+  border: 1px solid #0A3871;
+
+  width: 300px;
+  height: 67px;
+}
+
+
+.blocaDireito__texto{
+  width: 400px;
+  height: 944px;
+  top: 40px;
+  left: 1000px;
+  gap: 0px;
+  border-radius: 32px 0px 0px 0px;
+  opacity: 0px;
+
+}
+
+
+
+/*
 label,
 textarea {
   font-size: 0.8rem;
@@ -16,5 +114,5 @@ textarea {
 label {
   display: block;
   margin-bottom: 10px;
-}
+}*/
     
