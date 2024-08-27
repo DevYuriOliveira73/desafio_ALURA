@@ -9,32 +9,35 @@
 </head>
 <body>
     
-    <img src="imagem/a.png" alt="logo da alura">
-
+    
     <section class="blocoEsquerdo">
+        <img src="imagem/a.png" alt="logo da alura">
         
-        <textarea 
-            class="blocoEsquerdo__texto" 
-            id="texto_normal" 
-            name="story" 
-            rows="5" 
-            cols="30"
-            placeholder="Digite seu texto"
-        ></textarea>
-        
-        <p class="blocoEsquerdo__paragrafo"> <img src="imagem/bi_exclamation-circle-fill@2x.png" alt="aviso de esclamação"> Apenas letras minúsculas e sem acento.</p>
-        <section class="blocoEsquerdo__button">
-            <button
-                class="blocoEsquerdo__button__criptografar"
-                onClick="criptografar()">
-                    Criptografar
-            </button>
-            <button
-                class="blocoEsquerdo__button__descriptografar"
-                onClick="descriptografar()">
-                    Descriptografar
-            </button>
-        </section>
+        <div class ="blocoEsquerdo__area">
+            <div>
+                <textarea
+                    class="blocoEsquerdo__texto"
+                    id="texto_normal"
+                    name="story"
+                    rows="10"
+                    cols="48"
+                    placeholder="Digite seu texto"
+                ></textarea>
+            </div>
+            <p class="blocoEsquerdo__paragrafo"> <img src="imagem/bi_exclamation-circle-fill@2x.png" alt="aviso de esclamação"> Apenas letras minúsculas e sem acento.</p>
+            <div class="blocoEsquerdo__button">
+                <button
+                    class="blocoEsquerdo__button__criptografar"
+                    onClick="criptografar()">
+                        Criptografar
+                </button>
+                <button
+                    class="blocoEsquerdo__button__descriptografar"
+                    onClick="descriptografar()">
+                        Descriptografar
+                </button>
+            </div>
+        </div>
     </section>
 
 
@@ -45,9 +48,9 @@
             class="blocoDireito__texto" 
             id="texto_encriptado"
             name="story"
-            rows="5"
+            rows="8"
             cols="50"
-            placeholder="TELA LADO DIREITO"
+            placeholder="Nenhuma mensagem encontrada"
         ></textarea>
     </section>
 

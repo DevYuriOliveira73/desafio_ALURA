@@ -1,7 +1,7 @@
 function criptografar(){
     let texto = document.getElementById('texto_normal').value;
     let enviar = document.getElementById('texto_encriptado'); 
-    console.log(texto)
+    
     enviar.value = executar_criptografia(texto);
 
 
@@ -19,18 +19,15 @@ function criptografa1(){
 
 
 function descriptografar(){
-    let texto = document.getElementById('texto_encriptado').value;
-    let enviar = document.getElementById('texto_normal');
+    let texto = document.getElementById('texto_normal').value;
+    let enviar = document.getElementById('texto_encriptado'); 
 
-    console.log(texto)
+    
     enviar.value = executar_descriptografia(texto);
 
 
 }
-//método charAt() conseguimos acessar um caractere de uma string
-//substr()
-//replace()     será util
-//meu nome e yuri
+
 function executar_criptografia(txt){
     let texto='';
     for(var i=0; i<txt.length; i++){

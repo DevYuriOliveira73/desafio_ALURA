@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --cor-primaria:
+  --cor-primaria: #0A3871;
   --cor-secundaria: 
   --cor-terciaria: 
   --cor-hover: 
@@ -19,7 +19,7 @@ body {
 
   display: flex;
   box-sizing: border-box;
-  color: #0A3871;
+  color: var(--cor-primaria);
   background-color: #F3F5FC;
   
   flex-direction: row;
@@ -29,12 +29,31 @@ body {
 
 } 
 
+.blocoEsquerdo{
+  width: 70%;
+  
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.blocoEsquerdo__area{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+
 .blocoEsquerdo__texto{
   font-family: var(--fonte-primaria);
   font-weight: var(--fonte-weight);
   font-size: 32px;
   line-height: 48px;
   text-align: left;
+  background-color: #F3F5FC;
+  border-color: #F3F5FC;
 
 }
 
@@ -47,6 +66,8 @@ body {
   line-height: 18px;
   text-align: left;
 
+  padding-bottom: 16px;
+
 }
 
 .blocoEsquerdo__button{
@@ -56,6 +77,7 @@ body {
   align-items: center;
   gap: 24px;
 
+  border-radius: 10px;
   
   font-family: var(--fonte-primaria);
   font-weight: var(--fonte-weight);
@@ -66,53 +88,50 @@ body {
 }
 
 .blocoEsquerdo__button__criptografar{
-  background-color: #0A3871;
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-weight);
+  background-color: var(--cor-primaria);
+  border-color: transparent transparent transparent;
   color: White;
   
+  border-radius: 10px;
+
   width: 300px;
   height: 67px;
 }
 
 .blocoEsquerdo__button__descriptografar{
-  color: #0A3871;  
-  border: 1px solid #0A3871;
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-weight);
+  color: var(--cor-primaria);  
+  border: 1px solid var(--cor-primaria);
+
+  border-radius: 10px;
 
   width: 300px;
   height: 67px;
 }
 
+.blocoDireito{
+  margin-top: 40px;
+  height: 120px;
 
-.blocaDireito__texto{
+}
+
+.blocoDireito__texto{
   width: 400px;
-  height: 944px;
+  height: 475px;
+  padding: 5px;
   top: 40px;
   left: 1000px;
   gap: 0px;
-  border-radius: 32px 0px 0px 0px;
+  border-radius: 10px;
+  border-color: #F3F5FC;
   opacity: 0px;
 
+  font-family: var(--fonte-primaria);
+  font-weight: var(--fonte-weight);
+  font-size: 32px;
+  
+  text-align: left;
 }
-
-
-
-/*
-label,
-textarea {
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-
-textarea {
-  padding: 10px;
-  max-width: 100%;
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 4px solid #ccc;
-  box-shadow: 1px 1px 1px #999;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}*/
-    
