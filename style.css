@@ -29,6 +29,11 @@ body {
 
 } 
 
+button:hover {
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
 .blocoEsquerdo{
   width: 70%;
   
